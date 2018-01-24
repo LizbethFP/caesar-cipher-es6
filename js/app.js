@@ -1,13 +1,13 @@
 let cipher = secret => {
   let newPhrase = '';
-  // recorremos todo  el string
+  // Recorremos todo  el string
 
   for (let j = 0; j < secret.length; j++) {
     let toAscci = secret.charCodeAt(j); // convierte el string ingresado a su equivalente en Ascii en la posicion i
 
-    if (toAscci > 64 && toAscci < 91) // Fórmula para mayusculas
+    if (toAscci > 64 && toAscci < 91) // Fórmula para mayúsculas
       newPhrase += String.fromCharCode((toAscci - 65 + 33) % 26 + 65);
-    else if (toAscci > 96 && toAscci < 123) // para minusculas
+    else if (toAscci > 96 && toAscci < 123) // Fórmula para minúsculas
       newPhrase += String.fromCharCode((toAscci - 97 + 33) % 26 + 97);
     else
       newPhrase += String.fromCharCode(toAscci);
@@ -21,11 +21,11 @@ let decipher = secret => {
   let newPhrase = '';
 
   for (let i = 0; i < secret.length; i++) {
-    let toAscci = secret.charCodeAt(i); // convierte el string ingresado a su equivalente en Ascii en la posicion i
+    let toAscci = secret.charCodeAt(i); // Convierte el string ingresado a su equivalente en Ascii en la posicion i
 
-    if (toAscci > 64 && toAscci < 91) // para mayusculas
+    if (toAscci > 64 && toAscci < 91) // Para mayúsculas
       newPhrase += String.fromCharCode((toAscci - 65 - 33 + 26 * 2) % 26 + 65);// 26*2 porque recorre el abecedario dos veces para decifrar
-    else if (toAscci > 96 && toAscci < 123) // paraminusculas
+    else if (toAscci > 96 && toAscci < 123) // Para minúsculas
       newPhrase += String.fromCharCode((toAscci - 97 - 33 + 26 * 2) % 26 + 97);
     else
       newPhrase += String.fromCharCode(toAscci);
@@ -39,16 +39,16 @@ let decipher = secret => {
 // Evalúa solo el primer valor del string ingresado
 let validate = date => {
   for (let i = 0; i < date.length; i++) {
-    if ((date.charCodeAt(i) > 64 && date.charCodeAt(i) < 91) || (date.charCodeAt(i) > 96 && date.charCodeAt(i) < 123)) // condicionamos a que solo se ingrese letras o mayusculas o minusculas pasando a ascii, una vez convertido condicionamosa que este entre el rango
+    if ((date.charCodeAt(i) > 64 && date.charCodeAt(i) < 91) || (date.charCodeAt(i) > 96 && date.charCodeAt(i) < 123)) // condicionamos a que solo se ingrese letras o mayusculas o minusculas pasando a ascii, una vez convertido condicionamos a que este entre el rango
       return date;
     else if (date === null)
       return document.write('[ERROR]'); // no ingrese nada
     else
-      return document.write('[ERROR]'); // ingrese numeros o simbolos en el primer valor
+      return document.write('[ERROR]'); // ingrese números o símbolos en el primer valor
   }
 };
 
-// menu principal
+// Menú principal
 let menu = prompt('MENU PRINCIPAL CIFRADO CESAR \n\n' + '1- Para cifrar frases  \n\n ' + '2.- Para decifrar frases  \n\n' + '3.- Salir');
 let phrase;
 switch (menu) {
