@@ -1,0 +1,28 @@
+Terminos Tech Especialización Frontend
+
+Tipado debil
+Interpretado
+Hoisting
+Callback
+DRY (Dont Repeat Your Self)
+DOT (Do One Thing)
+Execution Context (Contexto de ejecución)
+Lexical Environment (Ambiente Lexical)
+Invocación
+Parámetros
+Argumentos
+Scope (alcance de la variable)
+Funciones Statement
+Funciones Expressions
+Funciones Anónimas
+First-class functions
+Algoritmo
+IDE (entorno de desarrollo integrado)
+Propiedad
+Método
+Bloque
+Scope global
+Scope local
+Encapsulación
+Transpilador
+Shell
