@@ -25,7 +25,7 @@ window.addEventListener('load', loadedPage => {
         newPhrase += String.fromCharCode(toAscci);
     }
     if (cipherInputValue.length === 0) {
-      alert('Lo siento, no ha ingresado frase a cifrar');
+      alert('Lo siento, no ha ingresado una frase a cifrar.');
     }
     // Limpiar input
     cipherInput.value = '';
@@ -54,7 +54,7 @@ window.addEventListener('load', loadedPage => {
         newPhrase += String.fromCharCode(toAscci);
     }
     if (decipherInputValue.length === 0) {
-      alert('Lo siento, no ha ingresado frase a decifrar');
+      alert('Lo siento, no ha ingresado una frase a decifrar.');
     }
     // Limpiar input
     decipherInput.value = '';
