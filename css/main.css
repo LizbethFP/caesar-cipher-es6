@@ -1,0 +1,13 @@
+/* Clases reutilizables */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.rounded-corners {
+ border-radius: 5px;
+}
+
+p {
+  padding-left: 10px;
+}
+/* Clases específicas */
